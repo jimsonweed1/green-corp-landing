@@ -231,3 +231,16 @@ footer h3{
         height: 75px;
     }
  }
+.about__images{
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
+.about__info{
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+.icon{
+    margin-left: 5px;
+    font-size: 80%;
+    text-align: center;
+}
