@@ -39,7 +39,9 @@ button {
 .about__image {
     width: 500px;
 }
+
 .about__sun-image {
+    position: absolute;
     width: 100px;
     height: 100px;
 }
@@ -53,6 +55,13 @@ button {
     background: url('img/back.png') no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+}
+.orb-canvas{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
 }
 .about h1 {
     font-size: 70px;
@@ -68,6 +77,7 @@ button {
     border-radius: 20px;
     padding: 20px 25px;
     margin-top: 20px;
+    position: absolute;
 }
 .about__info {
     max-width: 550px;
@@ -307,23 +317,30 @@ footer h3{
     content: '';
     display: inline-block;
     width: 10px;
-   height: 10px;
-   border-radius: 50%;
-   background-color: #ec6b29;
-   margin-right: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ec6b29;
+    margin-right: 10px;
 }
 
 .promo__text p {
     opacity: 0.8;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .promo__text button {
-    background-color: #107b1c;
+    background-color: #23a030;
     margin-top: 20px;
     font-weight: 600;
     font-size: 18px;
-    box-shadow: 0 16px 36px rgb(16 122 28 / 30%);
+    box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
     padding: 15px 30px;
+}
+.promo__text button:hover{
+    background-color: #f6980c;
+    box-shadow: rgba(246 152 12 / 20%);
+    transition: background-color 0.3s ease-in;
 }
 
 .promo__button-wrap {
@@ -335,6 +352,7 @@ footer h3{
     font-size: 15px;
     margin-left: 5px;
 }
+
 
 @media (max-width: 1024px) {
     .about {
