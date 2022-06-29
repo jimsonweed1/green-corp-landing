@@ -36,15 +36,6 @@ button {
     box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
     padding: 15px;
 }
-.about__image {
-    width: 500px;
-}
-
-.about__sun-image {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-}
 .about {
     display: flex;
     justify-content: space-around;
@@ -62,6 +53,19 @@ button {
     top: 0;
     right: 0;
     height: 100%;
+}
+.about__images{
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
+.about__sun-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation: rotation 10s linear infinite;
+}
+.about__image {
+    width: 500px;
 }
 .about h1 {
     font-size: 70px;
@@ -81,7 +85,8 @@ button {
 }
 .about__info {
     max-width: 550px;
-    
+    animation: fadeInLeft;
+    animation-duration: 2s;
 }
 .form__container {
     width: 550px;
@@ -89,8 +94,8 @@ button {
 .form {
     background-color: #1D263A;
     color: #fff;
-    padding-top: 115px;
-    padding-bottom: 115px;
+    padding-top: 15px;
+    padding-bottom: 30px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -182,18 +187,6 @@ footer h3{
     100%{
         transform: rotate(360deg);
       }
-}
-.about__sun-image {
-    animation: rotation 10s linear infinite;
-    position: absolute;
-}
-.about__images{
-    animation: fadeInRight;
-    animation-duration: 2s;
-}
-.about__info{
-    animation: fadeInLeft;
-    animation-duration: 2s;
 }
 .icon{
     margin-left: 5px;
@@ -309,10 +302,8 @@ footer h3{
     padding: 30px 40px;
     border-radius: 25px;
     font-size: 20px;
-    font-weight: 500;
     line-height: 26px;
 }
-
 .promo__text p::before {
     content: '';
     display: inline-block;
@@ -322,38 +313,25 @@ footer h3{
     background-color: #ec6b29;
     margin-right: 10px;
 }
-
 .promo__text p {
-    opacity: 0.8;
+    opacity: 0.7;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 26px;
 }
-
 .promo__text button {
-    background-color: #23a030;
     margin-top: 20px;
     font-weight: 600;
-    font-size: 18px;
-    box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
     padding: 15px 30px;
-}
-.promo__text button:hover{
-    background-color: #f6980c;
-    box-shadow: rgba(246 152 12 / 20%);
-    transition: background-color 0.3s ease-in;
 }
 
 .promo__button-wrap {
     display: flex;
     justify-content: center;
 }
-
 .promo__text button i {
     font-size: 15px;
     margin-left: 5px;
 }
-
-
 @media (max-width: 1024px) {
     .about {
         padding: 115px 20px;
@@ -370,7 +348,6 @@ footer h3{
         height: 75px;
     }
  }
-
  @media (max-width: 720px){
     .about__sun-image{
         width: 75px;
@@ -378,7 +355,7 @@ footer h3{
     }
     .about__image{
         width: 280px;
-    } 
+    }
     .header__logo {
         height: 20px;
     }
@@ -396,7 +373,6 @@ footer h3{
     }
     .about {
         flex-direction: column-reverse;
-        padding: 50px 10px;
     }
     .about h1 {
         font-size: 36px;
