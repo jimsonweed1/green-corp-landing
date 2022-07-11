@@ -102,7 +102,7 @@ button {
 .form {
     background-color: #1D263A;
     color: #fff;
-    padding-top: 15px;
+    padding-top: 50px;
     padding-bottom: 30px;
     text-align: center;
     display: flex;
@@ -203,7 +203,7 @@ footer h3{
 }
 .features{
     background-color: #fff;
-    padding: 40px 60px 40px 60px;
+    padding: 90px 60px 40px 60px;
 
 }
 .cards{
@@ -413,7 +413,7 @@ footer h3{
         flex-direction: column;
     }
     .features{
-        padding: 50px 10px;
+        padding: 80px 10px;
     }
     .cards{
         grid-template-columns: auto;
